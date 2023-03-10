@@ -4,10 +4,9 @@
 
 <p2><b>You should install by pip:
 </b></p2>
-  1)numpy
   
+  1)numpy</n>
   2)matplotlib 
-  
   3)keyboard
   
   <p3><b>Files:
