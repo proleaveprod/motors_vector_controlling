@@ -5,9 +5,7 @@
 <p2><b>You should install by pip:
 </b></p2>
   
-  1)numpy
-  2)matplotlib 
-  3)keyboard
+ numpy, matplotlib,keyboard
   
   <p3><b>Files:</b></p3>
     
