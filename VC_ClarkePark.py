@@ -7,24 +7,27 @@
 #   numpy
 #   keyboard
 
-
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import numpy as np
 from math import sqrt
 import keyboard
 
+#####0 - automatical changing the angle;
+#####1 - controlling of angle by keyboard (0 - decrease 1 - increase the angle).
+MODE = 1        
+
+
+
+
 fig, ax = plt.subplots()
-
 ax.set(xlim=[-1.5, 1.5], ylim=[-1.5, 1.5])
-
 ax.grid()
 ax.set_autoscale_on(1)
 t = np.arange(0, 2*np.pi, 0.01)          # угол t от 0 до 2pi с шагом 0.01
 r = 1                                    # радиус 4
 plt.plot(r*np.sin(t), r*np.cos(t), lw=1) # x и у задаем как numpy функции от t
 plt.axis('equal')                        # масштаб осей Х и У одинаковый (чтобы круг не был овалом)
-
 iabc_alpha = 1
 iabc_width = 0.02
 Ia = ax.quiver([0],[0],[0],[0],color='red',units='xy',scale=1, alpha=iabc_alpha ,width=iabc_width)
@@ -120,11 +123,11 @@ def clarkeGetABC(va,vb):
 
 thetta=0
 def update(frame):
-    global thetta
+    global thetta,MODE
 
         
-    mode = 1        #####0 - automatical changing the angle; 1 - controlling of angle by keyboard 0 - decrease 1 - increase the thetta.
-    if mode:
+    
+    if MODE:
         thetta = angle_by_keyboard()
     else:
         thetta +=0.02
