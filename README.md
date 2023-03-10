@@ -7,10 +7,8 @@
   
  numpy, matplotlib,keyboard
   
-  <p3><b>Files:</b></p3>
-    
+  <b>Files:</b>
     <b>1)VC_ClarkePark.py</b> - controlling by keyboard(or automaticaly) the motors Va, Vb, Vc with input variables: Vd, Vq, thetta.
-   
     <b>2)model_of_vector_controlling.py</b> - animation of rotating the motor with Va, Vb, Vc vectors.
     
   
